@@ -8,10 +8,6 @@ commentController = require('./controllers/commentController');
 
 
 
-routes.get('/', function(req, res, next) {
-    res.send('Home Page')
-})
-
 // User routes
 routes.get('/allusers', userController.getAllUsers);
 routes.get('/signupform', userController.userCreateGet);
