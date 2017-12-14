@@ -6,15 +6,13 @@ exports.getAllUsers = function(req, res, next) {
     });
 }
 
-exports.userCreateGet = function(req, res, next) {
-    res.send('Not implemented: User signup form');
-}
 
 exports.userCreatePost = function(req, res, next) {
     var newUser = new User({
         email: req.body.email,
         username: req.body.username,
-        password: req.body.password
+        password: req.body.password,
+        _post: req.body._post
     });
 
     newUser.save(function(err, newUser) {
