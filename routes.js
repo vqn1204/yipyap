@@ -3,15 +3,15 @@ const routes = express.Router();
 
 
 // Controller imports
-userController = require('./controllers/userController');
+// userController = require('./controllers/userController');
 postController = require('./controllers/postController');
 commentController = require('./controllers/commentController');
 
 
 
 // User routes
-routes.get('/allusers', userController.getAllUsers);
-routes.post('/signup', userController.userCreatePost);
+// routes.get('/allusers', userController.getAllUsers);
+// routes.post('/signup', userController.userCreatePost);
 
 // Post routes
 routes.get('/allposts', postController.getAllPosts);
